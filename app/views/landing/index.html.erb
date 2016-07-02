@@ -257,7 +257,7 @@
             <a href="">John Doe, johndoe.com</a>
           </p>
           <div class="testimonial-single-image">
-            <img src=<%= asset_path("testimonials/1.jpg")%> alt="" data-at2x=<%= asset_path("testimonials/1.jpg")%> />
+            <img src=<%= asset_path("testimonials/1.jpg")%> data-at2x=<%= asset_path("testimonials/1.jpg")%> />
             <!-- <%= image_tag "testimonials/1", "data-at2x": image_path("testimonials/1")%> -->
           </div>
         </div>
@@ -270,6 +270,8 @@
             <a href="">Jane Jonsson, blog.jane.com</a>
           </p>
           <div class="testimonial-single-image">
+            <img src=<%= asset_path("testimonials/2.jpg")%> data-at2x=<%= asset_path("testimonials/2.jpg")%> />
+            <br>
             <%= image_tag "testimonials/2.jpg", "data-at2x": asset_path("testimonials/2.jpg")%>
           </div>
         </div>
