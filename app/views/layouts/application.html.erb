@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PlantillaTrilliBi</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href=<%= image_path("ico/favicon") %>>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href=<%= image_path("ico/apple-touch-icon-144-precomposed") %>>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href=<%= image_path("ico/apple-touch-icon-114-precomposed")%>>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href=<%= image_path("ico/apple-touch-icon-72-precomposed")%>>
+    <link rel="apple-touch-icon-precomposed" href=<%= image_path("ico/apple-touch-icon-57-precomposed")%>>
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
